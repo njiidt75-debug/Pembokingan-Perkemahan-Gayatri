@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f7f2;
+    color: #263b35;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 5%;
+    background: white;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #1e392b;
+}
+
+.logo span {
+    font-size: 38px;
+}
+
+.logo strong {
+    font-size: 22px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #263b35;
+}
+
+nav a:hover {
+    color: #4f7f4c;
+}
+
+.btn-booking {
+    background: #1e392b;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 25px;
+}
+
+.hero {
+    min-height: 440px;
+    display: flex;
+    align-items: center;
+    padding: 60px 7%;
+    color: white;
+    background:
+        linear-gradient(90deg, #10251bcc, #10251b30),
+        url("https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&w=1800&q=80")
+        center/cover;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.hero-content p {
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.katalog {
+    padding: 55px 5%;
+    text-align: center;
+}
+
+.katalog h2,
+.ajakan h2 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.deskripsi {
+    color: #64716a;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.katalog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    text-align: left;
+}
+
+.kartu {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px #00000012;
+}
+
+.kartu img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.kartu-content {
+    padding: 20px;
+}
+
+.kartu h3 {
+    color: #1e392b;
+    margin-bottom: 12px;
+}
+
+.kartu p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #53615d;
+}
+
+.kartu a {
+    display: inline-block;
+    color: #1e392b;
+    font-weight: bold;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    width: 100%;
+}
+
+.ajakan {
+    background: #1e392b;
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.ajakan h2 {
+    color: white;
+}
+
+.ajakan p {
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.btn-utama {
+    display: inline-block;
+    background: #4f7f4c;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+footer {
+    background: #10251b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .katalog-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+}
